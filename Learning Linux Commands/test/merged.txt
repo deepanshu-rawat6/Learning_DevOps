@@ -1,2 +1,0 @@
-These sentence belongs to file part1.txt
-These sentence belongs to file part2.txt
