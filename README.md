@@ -1,4 +1,4 @@
-This contains my learning of DevOps, covering the DevOps Roadmap by Saiyam Pathak.
+This contains my learning of DevOps, covering the DevOps Roadmap 2022
 
 Syllabus:
 
