@@ -1,0 +1,10 @@
+{
+    "cities": [
+      "new delhi - mumbai",
+      "dehradun"
+    ],
+    "cities": {
+        "new": "delhi",
+        "dehradun,": "mumbai"
+      }
+  }

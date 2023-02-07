@@ -1,0 +1,30 @@
+# Key Values pairs like Associative Arrays/Dictionaries/Hashmaps
+"orange": "I am a orange fruit"
+10: "Just an integer"
+
+---
+
+# Lists
+  - orange
+  - apple 
+  - banana
+  - Apple
+
+---
+
+# Block style
+cities:
+  - new delhi - mumbai
+  - dehradun
+
+---
+
+# We can also use a flow type, to avoid any errors related to indentation
+
+cities: [new delhi, dehradun, mumbai]
+
+---
+
+# Also similar to square brackets, curly braces also works here.
+
+cities: {new delhi, dehradun, mumbai}
