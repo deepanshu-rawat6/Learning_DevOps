@@ -28,3 +28,9 @@ cities: [new delhi, dehradun, mumbai]
 # Also similar to square brackets, curly braces also works here.
 
 cities: {new delhi, dehradun, mumbai}
+
+# --- or ...
+...
+
+ 
+

@@ -1,0 +1,67 @@
+# Variable in YAML
+# <var>: <content>
+
+# String variables
+
+myself: "Deepanshu Rawat"
+fruit: "orange"
+profile: "Student"
+
+# For using multiline string in YAML, use a "|" sign with proper intendation of the content
+bio:  | 
+  Hi, I'm Deepanshu Rawat. 
+  I'm student developer at Open Community, UPES.
+
+# Write a single line in multiple lines, use ">"
+
+message: > 
+ this will
+ all be 
+ in one single line
+
+# Above example is similar to this example:
+
+message1: this will all be in one single line
+
+# Int
+number: 54123
+
+# Float
+marks: 96.45
+
+# Boolean
+boolVal: No # n,N,false, False, FALSE
+# same for true -> yes, y, Y, YES, Yes
+
+# Specify the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -23
+binaryNum: !!binary 0b11001
+octalNum: !!int 0234
+hexaNum: !!int 0x342
+# commaValue: !!int +500_2342 # 500,2342
+
+# FLoating point number
+marks1: !!float 54.54
+infinite: !!float .inf
+not a num: .nan
+
+# Boolean values
+#  <var>:  !!bool <content>
+
+# String values
+#  <var>: !!str <content>
+
+# exponential numbers
+expo: 6.023E23
+
+# null 
+random: !!null Null # or null NULL ~
+~: this is a null Key
+
+# Dates and Time
+date: !!timestamp 2023-2-10 # today's date
+# For IST
+date_IST: 2023-2-10T12:00:00.00 +5:30
+no time zone: 2023-2-10T12:00:00.00
