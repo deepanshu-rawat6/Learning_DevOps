@@ -1,4 +1,110 @@
+# list as a sequence
 student: !!seq
  - marks
  - name
  - roll_no
+
+#like this also
+citites: [new delhi,dehradun,mumbai]
+
+# some of the keys of the sequence will be empty
+# spare sequence
+
+spare seq:
+ - hey
+ - how
+ -
+ - null
+ - sup
+
+# nested sequences
+edibles:
+ - fruits
+  - mango
+  - banana
+  - orange
+ - vegetables
+  - carrot
+  - eggplant
+  - radish
+
+# key: value pairs are called maps
+# DS: !!map
+
+# nested mappings: map within a map
+name: Deepanshu Rawat
+role:
+  age: 20
+  job: student
+
+---
+
+# Same as this thing
+
+name: Deepanshu Rawat
+role: [age: 20 , job: student]
+
+---
+
+# or
+
+name: Deepanshu Rawat
+role: {age: 20 , job: student}
+
+# pairs: keys may have duplicate values
+# DS: !!pairs
+
+pair example: !!pairs
+ - job: student
+ - job: student developer
+
+#  this will be an array of hash tables 
+
+---
+
+# same as this
+
+pair example: !!pairs [job: student, job: student developer]
+
+# DS: !!set will allow you to have unique values
+names: !!set 
+ ? Deepanhu 
+ ? Kunal
+ ? Dell G15
+
+
+---
+# dictionary !!omap
+poeple: !!omap
+ - Deepanshu:
+    name: Deepanshu Rawat
+    age: 20
+    height: 6"
+ - Kunal:
+    name: Kunal Kushwaha
+    age: null
+    height: null
+  
+# reusing some properties using anchors
+linkings: &likes
+ fav fruit: mango
+ dislikes: grapes
+
+person:
+ name: Deepanshu Rawat
+ <<: *likes
+
+person2:
+ name: Kunal
+ <<: *likes
+ dislikes: berry
+
+# This will look likes this:
+# person2:
+#  name: Kunal
+#  fav fruit: mango
+#  dislikes: berry
+
+person3:
+ name: zephhyrus
+ <<: *likes

@@ -1,0 +1,15 @@
+{
+    "School": [
+        {
+            "name": "Heritage",
+            "principal": "Someone",
+            "Students" : [
+                {
+                    "rollNo": 13,
+                    "name": "Deepanshu",
+                    "marks": "95"
+                }
+            ]
+        }
+    ]
+}
